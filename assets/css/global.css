@@ -168,6 +168,7 @@ section .servicos {
 }
 
 .lista-servicos li {
+    padding: 20px;
     color: #d6d0a9;
     margin: 0 30px 30px 30px;
     text-align: center;
@@ -175,3 +176,15 @@ section .servicos {
     filter: drop-shadow(10px 10px 10px #000000);
 }
 
+.servicos .img-servicos img {
+    margin: 10px;
+    border-top: 50px;
+    border-bottom: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 10px #000000);
+}
+
+.servicos .img-servicos img:hover {
+    transform: scale(1.10);
+    transition: .2s;
+}
