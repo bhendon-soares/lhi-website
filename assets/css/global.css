@@ -187,3 +187,9 @@ section .servicos {
     transform: scale(1.10);
     transition: .2s;
 }
+
+.servicos .descricao p {
+    margin-top: 40px;
+    color: #FFF;
+    font-size: 18px;
+}
