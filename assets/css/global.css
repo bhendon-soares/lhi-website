@@ -22,7 +22,7 @@ body {
 
 .btn-contato button {
     padding: 10px 40px;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 600;
     background-color: #FFD700;
     border: 0;
@@ -41,7 +41,7 @@ header {
     padding: 40px 4%;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,7 +87,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color:#FFD700;
+    color: #FFD700;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -105,6 +105,7 @@ section.topo-do-site .flex {
     0% {
         top: 0;
     }
+
     100% {
         top: 30px;
     }
@@ -207,7 +208,7 @@ section.orcamento .flex {
     gap: 90px;
 }
 
-section.orcamento .txt-orcamento h2{
+section.orcamento .txt-orcamento h2 {
     text-align: center;
     color: #f7e376;
     filter: drop-shadow(10px 10px 10px #000000);
@@ -277,4 +278,106 @@ footer .line-footer p i {
 footer .line-footer p a {
     color: #fff;
     text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    .servicos .flex {
+        flex-direction: column;
+    }
+
+    .orcamento .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* QUEM SOMOS */
+    section.quem-somos {
+        padding: 15px 8%;
+    }
+
+    section.quem-somos .flex {
+        gap: 50px;
+    }
+
+    .quem-somos .txt-sobre h2 {
+        text-align: center;
+    }
+
+    .quem-somos .txt-sobre p {
+        text-align: start;
+    }
+
+    /* NOSSOS SERVIÇOS */
+    section.servicos {
+        padding: 20px 8%;
+    }
+
+    .servicos .img-servicos img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    /* ORÇAMENTO */
+    section.orcamento {
+        padding: 2px 8%;
+    }
+
+    .orcamento .txt-orcamento h2 {
+        margin-bottom: 2px;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .orcamento .txt-orcamento .btn-social button {
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px;
+        margin-bottom: 60px;
+    }
+
+    /* RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
 }
