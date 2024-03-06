@@ -131,8 +131,9 @@ section.quem-somos .flex {
 .quem-somos .txt-sobre p {
     color: #c5c4c4;
     margin: 20px 0;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .quem-somos .img-sobre img {
@@ -189,14 +190,21 @@ section.servicos {
 }
 
 .servicos .descricao p {
-    margin-top: 40px;
+    text-align: justify;
+    margin: 20px 0;
     color: #c5c4c4;
     font-size: 18px;
 }
 
 /* ESTILIZAÇÃO DO ORÇAMENTO */
 section.orcamento {
-    padding: 90px 4%;
+    padding: 100px 4%;
+}
+
+section.orcamento .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
 
 section.orcamento .txt-orcamento h2{
@@ -204,9 +212,16 @@ section.orcamento .txt-orcamento h2{
     color: #f7e376;
     filter: drop-shadow(10px 10px 10px #000000);
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 section.orcamento .txt-orcamento p {
     color: #c5c4c4;
+    text-align: justify;
+}
+
+section.orcamento .img-orcamento img {
+    filter: drop-shadow(10px 10px 10px #000000);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
