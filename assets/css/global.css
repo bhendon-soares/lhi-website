@@ -142,8 +142,8 @@ section.quem-somos .flex {
 }
 
 /* ESTILIZAÇÃO DOS NOSSOS SERVIÇOS */
-section .servicos {
-    text-align: center;
+section.servicos {
+    text-align: justify;
 }
 
 .servicos .interface {
@@ -190,6 +190,23 @@ section .servicos {
 
 .servicos .descricao p {
     margin-top: 40px;
-    color: #FFF;
+    color: #c5c4c4;
     font-size: 18px;
+}
+
+/* ESTILIZAÇÃO DO ORÇAMENTO */
+section.orcamento {
+    padding: 90px 4%;
+}
+
+section.orcamento .txt-orcamento h2{
+    text-align: center;
+    color: #f7e376;
+    filter: drop-shadow(10px 10px 10px #000000);
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+section.orcamento .txt-orcamento p {
+    color: #c5c4c4;
 }
